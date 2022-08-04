@@ -19,7 +19,7 @@ void Draw()
 void Input()
 {
   int a;
-  cout <<"It's"<<  player <<"turn."<< "Press the number of the field"<<endl;
+  cout <<player <<"のターンです、"<< "数字を入力してください"<<endl;
   cin>>a;
   if(a==1)
   {
@@ -28,7 +28,7 @@ void Input()
       matrix[0][0] = player;
     }
     else{
-      cout<<"Field is alredy in use try again!"<<endl;
+      cout<<"もう一度入力してください"<<endl;
       Input();
     }
   }
@@ -39,7 +39,7 @@ void Input()
       matrix[0][1] = player;
     }
     else{
-      cout<<"Field is alredy in use try again!"<<endl;
+      cout<<"もう一度入力してください"<<endl;
       Input();
     }
   }
@@ -50,7 +50,7 @@ void Input()
       matrix[0][2] = player;
     }
     else{
-      cout<<"Field is alredy in use try again!"<<endl;
+      cout<<"もう一度入力してください"<<endl;
       Input();
     }
   }
@@ -61,7 +61,7 @@ void Input()
       matrix[1][0] = player;
     }
     else{
-      cout<<"Field is alredy in use try again!"<<endl;
+      cout<<"もう一度入力してください"<<endl;
       Input();
     }
   }
@@ -72,7 +72,7 @@ void Input()
       matrix[1][1] = player;
     }
     else{
-      cout<<"Field is alredy in use try again!"<<endl;
+      cout<<"もう一度入力してください"<<endl;
       Input();
     }
   }
@@ -83,7 +83,7 @@ void Input()
       matrix[1][2] = player;
     }
     else{
-      cout<<"Field is alredy in use try again!"<<endl;
+      cout<<"もう一度入力してください"<<endl;
       Input();
     }
   }
@@ -94,7 +94,7 @@ void Input()
       matrix[2][0] = player;
     }
     else{
-      cout<<"Field is alredy in use try again!"<<endl;
+      cout<<"もう一度入力してください"<<endl;
       Input();
     }
   }
@@ -105,7 +105,7 @@ void Input()
       matrix[2][1] = player;
     }
     else{
-      cout<<"Field is alredy in use try again!"<<endl;
+      cout<<"もう一度入力してください"<<endl;
       Input();
     }
   }
@@ -116,7 +116,7 @@ void Input()
       matrix[2][2] = player;
     }
     else{
-      cout<<"Field is alredy in use try again!"<<endl;
+      cout<<"もう一度入力してください"<<endl;
       Input();
     }
   }
