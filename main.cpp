@@ -5,8 +5,8 @@ char player = 'X';
 int n;
 void Draw()
 {
-  system("cls");
-  cout << "Tic Tac Toe"<<endl;
+  
+  cout << "三目並べ"<<endl;
   for(int i = 0; i < 3; i++)
     {
       for(int j = 0; j < 3; j++)
@@ -28,7 +28,7 @@ void Input()
       matrix[0][0] = player;
     }
     else{
-      cout<<"もう一度入力してください"<<endl;
+      cout<<"既に入力されています、違う数字を入力してください"<<endl;
       Input();
     }
   }
@@ -39,7 +39,7 @@ void Input()
       matrix[0][1] = player;
     }
     else{
-      cout<<"もう一度入力してください"<<endl;
+      cout<<"既に入力されています、違う数字を入力してください"<<endl;
       Input();
     }
   }
@@ -50,7 +50,7 @@ void Input()
       matrix[0][2] = player;
     }
     else{
-      cout<<"もう一度入力してください"<<endl;
+      cout<<"既に入力されています、違う数字を入力してください"<<endl;
       Input();
     }
   }
@@ -61,7 +61,7 @@ void Input()
       matrix[1][0] = player;
     }
     else{
-      cout<<"もう一度入力してください"<<endl;
+      cout<<"既に入力されています、違う数字を入力してください"<<endl;
       Input();
     }
   }
@@ -72,7 +72,7 @@ void Input()
       matrix[1][1] = player;
     }
     else{
-      cout<<"もう一度入力してください"<<endl;
+      cout<<"既に入力されています、違う数字を入力してください"<<endl;
       Input();
     }
   }
@@ -83,7 +83,7 @@ void Input()
       matrix[1][2] = player;
     }
     else{
-      cout<<"もう一度入力してください"<<endl;
+      cout<<"既に入力されています、違う数字を入力してください"<<endl;
       Input();
     }
   }
@@ -94,7 +94,7 @@ void Input()
       matrix[2][0] = player;
     }
     else{
-      cout<<"もう一度入力してください"<<endl;
+      cout<<"既に入力されています、違う数字を入力してください"<<endl;
       Input();
     }
   }
@@ -105,7 +105,7 @@ void Input()
       matrix[2][1] = player;
     }
     else{
-      cout<<"もう一度入力してください"<<endl;
+      cout<<"既に入力されています、違う数字を入力してください"<<endl;
       Input();
     }
   }
@@ -116,11 +116,13 @@ void Input()
       matrix[2][2] = player;
     }
     else{
-      cout<<"もう一度入力してください"<<endl;
+      cout<<"既に入力されています、違う数字を入力してください"<<endl;
       Input();
     }
   }
-  
+  else{
+    cout<<"指定されていない数字、文字です、正しい数字を入力してください"<<endl;
+  }
 }
 void TogglePlayer()
 {
@@ -188,20 +190,19 @@ int main()
       Draw();
       if(Win() == 'X')
       {
-        cout << "Xの勝利"<<endl;
+        cout << "Xの勝利です"<<endl;
         break;
       }
       else if(Win() == 'O')
       {
-        cout << "Oの勝ち"<<endl;
+        cout << "Oの勝ちです"<<endl;
         break;
       }
       else if(Win() == '/' && n == 9){
-        cout<<"引き分け"<<endl;
+        cout<<"引き分けです"<<endl;
         break;
       }
       TogglePlayer();
     }
-  system("pause");
   return 0;
 }
